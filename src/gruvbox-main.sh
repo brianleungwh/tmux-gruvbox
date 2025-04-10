@@ -23,7 +23,7 @@ readonly TMUX_GRUVBOX_RIGHT_STAUTS_Z="@tmux-gruvbox-right-status-z"
 readonly DEFAULT_THEME="dark256"
 readonly DEFAULT_STATUSBAR_ALPHA='false'
 # defaults for theme option (with color interpolation)
-readonly DEFAULT_LEFT_STATUS_A='#S hehe haha'
+readonly DEFAULT_LEFT_STATUS_A='#S Test#1'
 readonly DEFAULT_RIGHT_STATUS_X='%Y-%m-%d'
 readonly DEFAULT_RIGHT_STATUS_Y='%H:%M'
 readonly DEFAULT_RIGHT_STATUS_Z='#h'
