@@ -75,5 +75,5 @@ theme_set_dark() {
   # default window
   local _default_window_status_format_bg=${col_bg1}
   if [[ "$_statusbar_alpha" == "true" ]]; then _default_window_status_format_bg="default"; fi
-  tmux_append_setwo "window-status-format" "#[bg=${col_bg2},fg=${col_bg1},noitalics]#[bg=${col_bg2},fg=${col_fg1}] #I #[bg=${col_bg2},fg=${col_fg1}] #W #{?window_marked_flag,*M ,} #{?window_end_flag,#[bg=${_default_window_status_format_bg}],#[bg=${col_bg1}]}#[fg=${col_bg2},noitalics]"
+  tmux_append_setwo "window-status-format" "#{?window_marked_flag,#[bg=${col_red2}],#[bg=${col_bg2}]}#[fg=${col_bg1},noitalics]#{?window_marked_flag,#[bg=${col_red2}],#[bg=${col_bg2}]}#[fg=${col_fg1}] #I #{?window_marked_flag,#[bg=${col_red2}],#[bg=${col_bg2}]}#[fg=${col_fg1}] #W #{?window_end_flag,#[bg=${_default_window_status_format_bg}],#[bg=${col_bg1}]}#{?window_marked_flag,#[fg=${col_red2}],#[fg=${col_bg2}]}#[noitalics]"
 }
